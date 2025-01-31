@@ -33,6 +33,7 @@
             colors: {
               colorPrimary: "#FFDC26",
               colorSecondary: "#FFF9F4",
+              colorSecondaryDeep: "#F9DF8A",
             },
           },
         },
@@ -68,7 +69,18 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <i class="fa-solid fa-bell text-2xl invisible lg:visible"></i>
+            <div class="flex">
+              <i class="fa-solid fa-bell text-2xl invisible lg:visible"> </i>
+              <span class="relative flex h-2 w-2 -ml-2 invisible lg:visible">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-2 w-2 bg-red-500"
+                ></span>
+              </span>
+            </div>
+
             <i
               class="fa-solid fa-magnifying-glass mx-6 text-2xl invisible lg:visible"
             ></i>
@@ -103,24 +115,106 @@
       </nav>
 
       <!-- hero section -->
-      <section
-        class="container mx-auto mt-6 bg-fixed w-full relative"
-        
-      >
-
+      <section class="container mx-auto mt-6 bg-fixed w-full relative">
         <div class="pt-44 md:pt-28 lg:pt-0">
-          <img src="assets/cat-big.png" alt="">
+          <img src="assets/cat-big.png" alt="" />
         </div>
-        <div class="space-y-3 lg:w-2/4 lg:mt-6 md:mt-4  mx-6 absolute lg:top-10 top-1">
-          <h3 class="lg:text-6xl text-3xl">Pamper Your Pet, Because They Deserve the Bes</h3>
+        <div
+          class="space-y-3 lg:w-2/4 lg:mt-6 md:mt-4 mx-6 absolute lg:top-10 top-1"
+        >
+          <h3 class="lg:text-6xl text-3xl">
+            Pamper Your Pet, Because They Deserve the Bes
+          </h3>
           <p class="text-xl">
             Discover a world of treats, toys, and essentials handpicked for your
             furry friends. Shop now and make tails wag with joy!
           </p>
-          <button class=" btn px-7 py-2 bg-colorPrimary border-colorPrimary hover:bg-colorSecondary hover:border-colorPrimary text-xl">Find a pet</button>
+          <button
+            class="btn px-7 py-2 bg-colorPrimary border-colorPrimary hover:bg-colorSecondary hover:border-colorPrimary text-xl"
+          >
+            Find a pet
+          </button>
         </div>
       </section>
     </header>
-    <main></main>
+    <main>
+      <!-- Categories section -->
+      <section class="my-24">
+        <div class="container mx-auto p-5">
+          <h3 class="text-4xl">Browse By Categories</h3>
+
+          <div
+            class="grid lg:grid-cols-6 md:grid-cols-4 grid-cols-2 gap-6 mt-10"
+          >
+            <div
+              class="bg-colorSecondaryDeep rounded-lg flex justify-center items-center flex-col py-8 px-9"
+            >
+              <img
+                class="bg-white p-4 rounded-full"
+                src="assets/dog-cartoon.png"
+                alt=""
+              />
+              <h3>Dog</h3>
+              <p>3 items</p>
+            </div>
+            <div
+              class="bg-colorSecondaryDeep rounded-lg flex justify-center items-center flex-col py-8"
+            >
+              <img
+                class="bg-white p-4 rounded-full"
+                src="assets/fish-cartoon.png"
+                alt=""
+              />
+              <h3>Fish</h3>
+              <p>3 items</p>
+            </div>
+            <div
+              class="bg-colorSecondaryDeep rounded-lg flex justify-center items-center flex-col py-8"
+            >
+              <img
+                class="bg-white p-4 rounded-full"
+                src="assets/cat-cartoon.png"
+                alt=""
+              />
+              <h3>Cat</h3>
+              <p>3 items</p>
+            </div>
+            <div
+              class="bg-colorSecondaryDeep rounded-lg flex justify-center items-center flex-col py-8"
+            >
+              <img
+                class="bg-white p-4 rounded-full"
+                src="assets/bird-cartoon.png"
+                alt=""
+              />
+              <h3>Birds</h3>
+              <p>3 items</p>
+            </div>
+            <div
+              class="bg-colorSecondaryDeep rounded-lg flex justify-center items-center flex-col py-8"
+            >
+              <img
+                class="bg-white p-4 rounded-full"
+                src="assets/mouse-cartoon.png"
+                alt=""
+              />
+              <h3>Small pet</h3>
+              <p>3 items</p>
+            </div>
+            <div
+              class="bg-colorSecondaryDeep rounded-lg flex justify-center items-center flex-col py-8"
+            >
+              <img
+                class="bg-white p-4 rounded-full"
+                src="assets/rabbit-cartoon.png"
+                alt=""
+              />
+              <h3>Rabit</h3>
+              <p>2 items</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
